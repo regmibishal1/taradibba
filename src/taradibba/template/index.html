@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Home {% endblock %}
+
+<!--{% block script %} {% endblock %}-->
+
+{% block content %}
+	<div id="teamPicCarousel" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="{% static 'img/taradibba.jpg' %}" class="d-block w-100" alt="Team Pic 1">
+			</div>
+			<div class="carousel-item">
+				<img src="{% static 'img/taradibba_2.jpg' %}" class="d-block w-100" alt="Team Pic 2">
+			</div>
+			<div class="carousel-item">
+				<img src="{% static 'img/taradibba_3.jpg' %}" class="d-block w-100" alt="Team Pic 3">
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#teamPicCarousel" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#teamPicCarousel" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
+{% endblock %}
